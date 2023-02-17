@@ -1,39 +1,44 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Prints numbers between 012 to 789.
  *
- * Description: display triple digits and ,
-
-
- * Return: Always 0 (successful)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-    int i, j, k, l;
+	int i, e, g;
 
-    i = 0;
-    while (i < 1000)
-    {
-        j = i / 100; /* hundreds */
-        k = (i / 10) % 10; /* tens */
-        l = i % 100; /* units */
-        if (j < k && k < l)
-        {
-            putchar(l + '0');
-            putchar(k + '0');
-            putchar(j + '0');
-            if (i < 789)
-            {
-                putchar(',');
+	i = 48;
+	e = 48;
+	g = 48;
 
-             putchar(' ');
-            }
-        }
-        i++;
-    }
-    putchar('\n');
-
-    return (0);
+	while (e < 58)
+	{
+		i = 48;
+		while (i < 58)
+		{
+			g = 48;
+			while (g < 58)
+			{
+				if (e != i && e != g && i != g && e < i && i < g)
+				{
+					putchar(e);
+					putchar(i);
+					putchar(g);
+					if (i == 56 && e == 55 && g == 57)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
+				}
+				g++;
+			}
+			i++;
+		}
+		e++;
+	}
+	putchar('\n');
+	return (0);
 }
