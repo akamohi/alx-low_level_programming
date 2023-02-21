@@ -1,17 +1,21 @@
 #include "main.h"
 
 /*
- * write the program that prints _putchar
+ * main - Entry point
  *
  */
 int main (void)
 {
-	_putchar('s');
-        _putchar('o');
-	_putchar('b');
-	_putchar('e');
-	_putchar('k');
-        _putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-	return (0);
+
+return (0);
 }
