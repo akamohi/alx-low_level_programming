@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * binary_to_uint - convert a binary number to an unsigned int
- * @b: char string
- * Return: converted decimal number or 0 if there is an unconvertable char
+ * binary_to_uint - convert to a binary number to an unsigned int
+ * @b:char string only
+ * Return:converted decimal number or 0 if there is an unconvertable char and return
  */
 unsigned int binary_to_uint(const char *b)
 {
